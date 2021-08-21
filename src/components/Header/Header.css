@@ -1,0 +1,31 @@
+.logo {
+  float: left;
+}
+nav {
+  float: right;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+  margin: 0.5rem;
+}
+
+header {
+  background-color: rgb(162, 157, 240);
+}
+
+div a {
+  margin: 0.5rem;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+a img {
+  width: 2rem;
+  height: 2rem;
+}
