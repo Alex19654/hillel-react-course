@@ -1,0 +1,38 @@
+.postData{
+   display: flex;
+   width: 90%;
+   align-items: center;
+   padding: 5px;
+}
+
+.postBody{
+   margin: 0 auto;
+}
+
+.element{
+   text-align: center;
+}
+
+.postData{
+   display: flex;
+}
+
+.postBody__userid{
+   flex-basis: 5%;
+
+}
+
+.postBody__id{
+   flex-basis: 5%;
+
+}
+
+.postBody__title{
+   flex-basis: 20%;
+
+}
+
+.postBody__body{
+   flex-basis: 70%;
+
+}

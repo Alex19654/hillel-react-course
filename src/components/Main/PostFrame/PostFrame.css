@@ -1,0 +1,26 @@
+.postFrame{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+}
+
+.postFrame__titles{
+   display: flex;
+   width: 90%;
+   align-items: center;
+   padding: 5px;
+}
+
+.postFrame__header{
+   border: 1px solid #123412;
+   padding: 5px;
+}
+
+.postFrame__button{
+   margin: 0 5px;
+}
+
+.postFrame__body{
+   align-self: center;
+}
