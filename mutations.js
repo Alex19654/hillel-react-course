@@ -10,8 +10,8 @@ function mutation(arr) {
    let mainStr = arr[0].toLowerCase();
    let secStr = arr[1].toLowerCase().split('');
 
-   for (let i = 0; i < secStr.length; i++) {
-     if (mainStr.indexOf(secStr[i]) == -1) {
+   for (item of secStr) {
+     if (mainStr.indexOf(secStr[item]) == -1) {
        result = false;
        return result;
      }

@@ -5,29 +5,9 @@
 // Likewise, getIndexToIns([20,3,5], 19) should return 2 because once the array has been sorted it will look like [3,5,20] and 19 is less than 20 (index 2) and greater than 5 (index 1).
 
 function getIndexToIns(arr, num) {
+   let index = arr.sort((a, b) => {return a-b}).findIndex((item) => item >= num);
 
-   /* Sort array */
-   arr.sort((a, b) => {
-      if (a > b) {
-         return 1;
-      } else if (a < b) {
-         return -1;
-      } else {
-         return 0;
-      }
-   })
-
-   /* Find index where we need to place num */
-   let number = arr.findIndex( (item) => item >= num );
-
-   /* Check the number for cases where it shoud be placed last or first */
-   if (arr.length === 0) {
-      return 0
-   } else if (number === -1) {
-      return arr.length;
-   } else {
-      return number;
-   }
+   return (arr.length == 0) ? 0 : (index == -1) ? arr.length : index;
  }
  
  getIndexToIns([2, 5, 10], 15)
